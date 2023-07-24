@@ -6,7 +6,7 @@ import { GraphQLService } from './graphql.service';
 @Component({
   selector: 'app-talks',
   templateUrl: './talks.component.html', // Updated to reference the new template file
-  styleUrls: ['./talks.component.css']
+  styleUrls: ['./talks.component.sass']
 })
 export class TalksComponent implements OnInit {
   // @ts-ignore
