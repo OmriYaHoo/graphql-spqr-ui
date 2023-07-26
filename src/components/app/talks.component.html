@@ -2,11 +2,14 @@
 
 <div class="container">
   <div class="card">
-    <h2>Available Talks</h2>
+    <h1>GraphQL SPQR UI</h1>
+    <h2>Tech Forum Talks</h2>
     <ng-container *ngIf="talks$ | async as talks; else loadingOrError">
       <ul class="talk-list">
         <li *ngFor="let talk of talks" class="talk-item">
           <span class="talk-subject">{{ talk.subject }}</span> by <span class="talk-speaker">{{ talk.speaker.name }}</span>
+          <br/>
+          <span class="talk-subject">Number of Attendees: </span><span class="talk-numberOfAttendees">{{ talk.numberOfAttendees }}</span>
         </li>
       </ul>
     </ng-container>
